@@ -14,17 +14,14 @@ public class Main2 {
         long startTime2=System.currentTimeMillis();
         int suma=0;
         int num=0;
-       // Scanner entrada = new Scanner(file);
+
         String line;
         for (int i = 0; i < 100 ; i++) {
             line= bRead.readLine();
             num = Integer.parseInt(line);
             suma= suma + num;
         }
-        /*while(entrada.hasNext()){
-            num = entrada.nextInt();
-            suma= suma + num;
-        }*/
+
         bRead.close();
         long endTime= System.currentTimeMillis();
         long endTime2= System.currentTimeMillis();
